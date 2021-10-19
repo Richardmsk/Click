@@ -9,10 +9,22 @@
   <link rel="shortcut icon" type="image/png" href="favicon.ico">
 </head>
 <body>
-  <div id="cl-switch-container">
-    <div id="cl-switch" class="cl-switch-on">
+  <div id="cl-switch" class="cl-switch-container">
+    <div class="cl-switch-on">
+      <img src="assets/switch-on1.png">
+    </div>
+    <div class="cl-switch-off">
+      <img src="assets/switch-off1.gif">
     </div>
   </div>
-  <script src="1.js"></script>
+  <script>
+  (function() {
+    var switch = document.getElementById('cl-switch');
+
+    switch.addEventListener('click', function(e){
+        body.classList.toggle('cl-switch--on');
+    });
+  })();
+  </script>
 </body>
 </html>

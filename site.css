@@ -1,21 +1,29 @@
+body {
+  margin: 0;
+}
 
-#cl-switch-container {
-  width: 1000px;
-  height: 1000px;
+img {
+  width: 100%;
+}
+
+.cl-switch-container {
+  width: 30%;
   margin: auto;
-  text-align: center
+  position: relative;
 }
 
 .cl-switch-on {
-  width: 256px;
-  height: 256px;
-  background: url('assets/switch-on.png'); no-repeat;
-  margin: auto;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.cl-switch--on .cl-switch-on {
+  opacity: 1;
 }
 
 .cl-switch-off {
-  width: 256px;
-  height: 256px;
-  background: url('assets/switch-off.png'); no-repeat;
-  margin: auto;
+  width: 100%;
 }
