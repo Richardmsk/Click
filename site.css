@@ -1,11 +1,21 @@
-body {
-  margin: 0;
+
+#cl-switch-container {
+  width: 1000px;
+  height: 1000px;
+  margin: auto;
+  text-align: center
 }
 
-img {
-  width: 100%;
+.cl-switch-on {
+  width: 256px;
+  height: 256px;
+  background: url('assets/switch-on.png'); no-repeat;
+  margin: auto;
 }
 
-.cl-switch-container {
-  width: 30%;
+.cl-switch-off {
+  width: 256px;
+  height: 256px;
+  background: url('assets/switch-off.png'); no-repeat;
+  margin: auto;
 }
