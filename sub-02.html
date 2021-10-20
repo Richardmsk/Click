@@ -15,15 +15,17 @@
 </style>
 </head>
 <body>
+  <audio id="audio_play" style="display:none">
+  <source src="light.mp3" type="audio/mpeg"> </audio>
   <div class="text-container">
     <a href="index.html"><p style="color:#FFCCCC">NEXT</p></a>
   </div>
   <div id="cl-switch" class="cl-switch-container">
     <div class="cl-switch-on">
-      <img src="assets/light-on.png">
+      <img src="assets/light-on.png" onClick="document.getElementById('audio_play').play(); return false;" />
     </div>
     <div class="cl-switch-off">
-      <img src="assets/light-off.gif">
+      <img src="assets/light-off.gif" onClick="document.getElementById('audio_play').play(); return false;" />
     </div>
   </div>
   <script>
