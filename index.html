@@ -11,18 +11,18 @@
 <body>
   <div id="cl-switch" class="cl-switch-container">
     <div class="cl-switch-on">
-      <img src="assets/switch-on1.png">
+      <img src="assets/switch-on-croped.png">
     </div>
     <div class="cl-switch-off">
-      <img src="assets/switch-off1.gif">
+      <img src="assets/switch-off-croped.gif">
     </div>
   </div>
   <script>
   (function() {
-    var switch = document.getElementById('cl-switch');
+    var lightswitch = document.getElementById('cl-switch');
 
-    switch.addEventListener('click', function(e){
-        body.classList.toggle('cl-switch--on');
+    lightswitch.addEventListener('click', function(e){
+        document.body.classList.toggle('cl-switch--on');
     });
   })();
   </script>
