@@ -5,17 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome1">
   <meta name="viewport" content="width=deivce-width, initial-scale=1.0">
   <title>Click</title>
-  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="site-02.css">
   <link rel="shortcut icon" type="image/png" href="favicon.ico">
+  <style>
+  @font-face {
+    font-family: PIXEAL;
+    src: url( Minecraft.ttf);
+  }
+</style>
 </head>
 <body>
-  <div class="cl-switch-container">
+  <div class="text-container">
+    <a href="index.html"><p style="color:#FFCCCC">NEXT</p></a>
+  </div>
+  <div id="cl-switch" class="cl-switch-container">
     <div class="cl-switch-on">
-      <img src="assets/light-on.gif">
+      <img src="assets/light-on.png">
     </div>
     <div class="cl-switch-off">
-      <img src="assets/light-off.png">
+      <img src="assets/light-off.gif">
     </div>
   </div>
+  <script>
+  (function() {
+    var lightswitch = document.getElementById('cl-switch');
+
+    lightswitch.addEventListener('click', function(e){
+        document.body.classList.toggle('cl-switch--on');
+    });
+  })();
+  </script>
 </body>
-</html
+</html>
